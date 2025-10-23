@@ -1,6 +1,13 @@
+import bgHero from '../../assets/background_img/wu-yi-4FLTvz6aiNQ-unsplash.jpg';
+
 function Hero() {
   return (
-  <section className="hero">
+  <section
+    className="relative bg-cover bg-center bg-no-repeat h-screen flex flex-col justify-center items-center text-white"
+    style={{
+      backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${bgHero})`,
+    }}
+  >
     {/* To vertically center the hero in the viewport */}
     <div className="container mx-auto px-4 py-20 text-center">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto leading-tight">
