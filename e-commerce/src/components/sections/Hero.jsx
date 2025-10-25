@@ -1,15 +1,16 @@
 import bgHero from '../../assets/background_img/wu-yi-4FLTvz6aiNQ-unsplash.jpg';
 import Logo from '../common/Logo';
+import Statistics from './Statistics';
 
 function Hero() {
   return (
   <section
-    className="relative bg-cover bg-center bg-no-repeat h-screen flex flex-col justify-center items-center text-white"
+    className="relative bg-cover bg-center bg-no-repeat min-h-screen w-full flex flex-col justify-center items-center text-white"
     style={{
-      backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${bgHero})`,
+      backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${bgHero})`
     }}
   >
-    {/* Top bar: Logo on left, nav/header on right */}
+    {/* Top bar: Logo on left, nav on right */}
     <div className="absolute top-6 left-0 right-0 px-4">
       <div className="container mx-auto flex items-center justify-between">
         <Logo />
@@ -25,8 +26,6 @@ function Hero() {
     </div>
     {/* To vertically center the hero in the viewport */}
     <div className="container mx-auto px-4 py-20 text-center">
-      <div className="mb-6">
-      </div>
       <h1 className="text-4xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto leading-tight">
         <span className="block">Illuminate Your World With</span>
         <span className="block">Timeless Elegance</span>
@@ -37,7 +36,10 @@ function Hero() {
       </p>
       <a href="/get-started" className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-700 transition duration-300">Shop Now</a>
     </div>
-    </section>
+    <div className="absolute bottom-0 left-0 right-0 transform translate-y-1/2">
+      <Statistics />
+    </div>
+  </section>
   );
 };
 export default Hero;
