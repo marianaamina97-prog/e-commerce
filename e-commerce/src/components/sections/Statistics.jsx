@@ -1,27 +1,25 @@
 function Statistics() {
   return (
-    <section className="statistics-section">
+    <section className="statistics-section w-full px-4">
         <div
-            className="bg-blue-600 text-white rounded-2xl shadow-lg
-            flex justify-around items-center mx-auto
-            transition-all duration-300 py-12 px-8"
+            className="bg-blue-600 text-white rounded-xl shadow-lg
+            grid grid-cols-4 gap-8 justify-items-center items-center mx-auto
+            transition-all duration-300 py-8 px-12"
             style={{
-                width: '90%',
-                maxWidth: '1240px',
+                width: '100%',
+                maxWidth: '1200px',
                 zIndex: 10
             }}
         >
             {[
-                { label: 'Products Sold', value: '1,250+' },
-                { label: 'Active Users', value: '5,000+' },
-                { label: 'Positive Reviews', value: '1,200+' },
+                { label: 'Year\nExperience', value: '7' },
+                { label: 'Products\nSold', value: '100k+' },
+                { label: 'Active\nUsers', value: '10k+' },
+                { label: 'Positive\nReviews', value: '30k+' },
             ].map((stat, index) => (
-                <div key={index} className="text-center relative flex-1">
-                    <h3 className="text-3xl font-bold">{stat.value}</h3>
-                    <p className="mt-1 text-base">{stat.label}</p>
-                    {index < 2 && (
-                        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 h-10 w-[1px] border-white opacity-30"></div>
-                    )}
+                <div key={index} className="text-center">
+                    <h3 className="text-4xl font-bold mb-2">{stat.value}</h3>
+                    <p className="text-sm whitespace-pre-line">{stat.label}</p>
                 </div>
             ))}
         </div>
