@@ -5,7 +5,7 @@ import Statistics from './Statistics';
 function Hero() {
   return (
   <section
-    className="relative bg-cover bg-center bg-no-repeat min-h-screen w-full flex flex-col justify-center items-center text-white"
+    className="relative bg-cover bg-center bg-no-repeat min-h-screen w-full flex flex-col justify-center items-center text-white pb-48"
     style={{
       backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${bgHero})`
     }}
