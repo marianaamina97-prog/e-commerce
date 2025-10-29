@@ -16,9 +16,9 @@ function Products({ products = defaultProducts }) {
     return (
         <section className="min-h-screen p-12 bg-gray-100">
             <div className="container mx-auto max-w-6xl">
-                <div className="flex gap-12">
+                <div className="flex gap-12 items-start">
                     {/* text place */}
-                    <div className="flex-shrink-0 pt-8">
+                    <div className="w-full md:w-1/4 flex-shrink-0 pt-8">
                         <h2 className="text-3xl font-bold text-gray-800">Featured Products</h2>
                         <p className="mt-4 text-gray-600 max-w-sm">
                             Discover our curated selection of premium lighting products that blend style and functionality to elevate your living spaces.
@@ -30,10 +30,12 @@ function Products({ products = defaultProducts }) {
                     </div>
 
                     {/* product side */}
-                    <div className="flex gap-4 flex-wrap">
-                        {products.map((product, index) => (
-                            <ProductCard key={product.title + index} image={product.image} title={product.title} />
-                        ))}
+                    <div className="flex-1">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                            {products.map((product, index) => (
+                                <ProductCard key={product.title + index} image={product.image} title={product.title} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
