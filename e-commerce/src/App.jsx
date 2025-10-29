@@ -3,6 +3,7 @@ import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
 import Statistics from './components/sections/Statistics'
 import About from './components/sections/About'
+import Products from './components/sections/Products'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Statistics />
       </div>
       <About />
+      <Products />
     </main>
     <Footer />
     </>
