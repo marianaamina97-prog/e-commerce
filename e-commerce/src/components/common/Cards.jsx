@@ -17,7 +17,7 @@ export default Card;
 export function ProductCard({ image, title }) {
   return (
     <div className="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-      <img src={image} alt={title} className="w-full h-56 md:h-72 lg:h-80 object-cover" />
+      <img src={image} alt={title} className="w-full h-48 md:h-56 lg:h-64 object-cover" />
       <div className="absolute left-4 bottom-4 text-white text-lg font-semibold">
         {title}
       </div>
