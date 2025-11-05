@@ -1,6 +1,5 @@
 import bgHero from '../../assets/background_img/wu-yi-4FLTvz6aiNQ-unsplash.jpg';
 import Logo from '../common/Logo';
-// Statistics will be rendered after Hero (in App) so we can control overlap
 
 function Hero() {
   return (

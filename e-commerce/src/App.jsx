@@ -5,6 +5,7 @@ import Statistics from './components/sections/Statistics'
 import About from './components/sections/About'
 import Products from './components/sections/Products'
 import About2 from './components/sections/About2'
+import Ligts from './components/sections/Lights'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Products />
       <About2 />
+      <Ligts />
     </main>
     <Footer />
     </>
