@@ -24,6 +24,17 @@ function Lights() {
     {
       id: 3,name:"Amber glow Trio",image: imgLight3,price: 36.99,originalPrice:47.13,
     },
+    {
+      id: 4,name: "Bedside Lamp",image: imgLight4,price: 59.99,originalPrice: 79.99,
+    },
+    {
+      id: 5,name: "LED Strip Lights",image: imgLight5,price: 24.99,originalPrice: 34.99,
+    },
+    {      id: 6,name: "Vintage Edison Bulb",image: imgLight6,price: 14.99,originalPrice: 19.99,
+    },
+    {
+      id: 7,name: "Modern Pendant",image: imgLamp,price: 39.99,originalPrice: 49.99,
+    },
   ];
 
   return (
