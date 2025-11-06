@@ -3,35 +3,26 @@ import { Plus } from 'lucide-react';
 import imgLight1 from '../../assets/images/ayush-kumar-jdLElG-fgvs-unsplash.jpg';
 import imgLight2 from '../../assets/images/brandi-alexandra-ttvcIK0kUTg-unsplash.jpg';
 import imgDesk from '../../assets/images/damnikia-Rvmi0EZIPgA-unsplash.jpg';
-import imgCupboard from '../../assets/images/ellephant-3CAiUdt1RFs-unsplash.jpg';
-import imgChair from '../../assets/images/emilio-garcia-_bzFLkJyY6o-unsplash.jpg';
-import imgFurniture1 from '../../assets/images/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg';
-import imgFurniture2 from '../../assets/images/natalia-y-R-qWnGTaAyU-unsplash.jpg';
+import imgLight3 from '../../assets/images/ellephant-3CAiUdt1RFs-unsplash.jpg';
+import imgLight4 from '../../assets/images/emilio-garcia-_bzFLkJyY6o-unsplash.jpg';
+import imgLight5 from '../../assets/images/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg';
+import imgLight6 from '../../assets/images/natalia-y-R-qWnGTaAyU-unsplash.jpg';
 import imgLamp from '../../assets/images/wallace-wang-5ul3t7WaMRk-unsplash.jpg';
 
 
 function Lights() {
   const products = [
     {
-      id: 1,
-      name: "LED Ceiling Light",
-      image: imgLight1,
-      price: 49.99,
-      originalPrice: 69.99,
+      id: 1,name: "Smart Bulb",image: imgLight1,price: 49.99,originalPrice: 69.99,
     },
     {
-      id: 2,
-      name: "Smart Bulb",
-      image: imgLight2,
-      price: 19.99,
-      originalPrice: 29.99,
+      id: 2,name: "Glossy Chandelier",image: imgLight2,price: 19.99,originalPrice: 29.99,
     },
     {
-      id: 3,
-      name: "Table Lamp",
-      image: imgDesk,
-      price: 34.99,
-      originalPrice: 49.99,
+      id: 3,name: "Hanging lights",image: imgDesk,price: 34.99,originalPrice: 49.99,
+    },
+    {
+      id: 3,name:"Amber glow Trio",image: imgLight3,price: 36.99,originalPrice:47.13,
     },
   ];
 
