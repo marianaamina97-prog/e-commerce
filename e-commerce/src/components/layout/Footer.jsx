@@ -7,10 +7,9 @@ import {
 
 function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-10 mt-10">
-            {/* whole content wrap */}
+        <footer className="bg-gray-800 text-white py-10 mt-0">
             <div className="container mx-auto px-4">
-                {/* Top: Logo + social icons stacked on small screens */}
+                {/* Top */}
                 <div className="flex flex-col items-center md:items-start md:flex-row md:justify-between mb-8">
                     <div className="text-center md:text-left mb-4 md:mb-0">
                         <h2 className="text-2xl font-bold">Luxora</h2>
@@ -31,7 +30,7 @@ function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom: other columns in a responsive grid */}
+                {/* Bottom */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     <div>
                         <h3 className="text-white font-semibold mb-4">Our Product</h3>
@@ -72,7 +71,7 @@ function Footer() {
                 </div>
             </div>
             {/* Bottom part */}
-            <div className="mt-6 text-center text-sm text-gray-400">
+            <div className="mt-0 text-center text-sm text-gray-400">
                 &copy; {new Date().getFullYear()} Luxora. All rights reserved.
             </div>
         </footer>

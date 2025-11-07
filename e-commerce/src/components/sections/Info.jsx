@@ -21,7 +21,7 @@ export default function Info() {
 
   return (
     <section
-      className="relative min-h-[80vh] flex items-center justify-end bg-cover bg-bottom rounded-lg overflow-hidden pr-4 md:pr-8"
+      className="relative min-h-[80vh] flex items-center justify-end bg-cover bg-bottom overflow-hidden pr-4 md:pr-8"
       style={{
         backgroundImage: `url(${bgInfo})`,
          backgroundPosition: "center bottom 35%",
