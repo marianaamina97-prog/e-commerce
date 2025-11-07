@@ -1,8 +1,8 @@
 import React from 'react';
 import { Plus } from 'lucide-react';
 import imgLight1 from '../../assets/images/ayush-kumar-jdLElG-fgvs-unsplash.jpg';
-import imgLight2 from '../../assets/images/brandi-alexandra-ttvcIK0kUTg-unsplash.jpg';
-import imgDesk from '../../assets/images/damnikia-Rvmi0EZIPgA-unsplash.jpg';
+import imgLight2 from '../../assets/images/thoa-ngo-B0ZCh_kpbrE-unsplash.jpg';
+import imgDesk from '../../assets/background_img/marius-haakestad-Y6-F_K1hfDA-unsplash.jpg';
 import imgLight3 from '../../assets/images/ellephant-3CAiUdt1RFs-unsplash.jpg';
 import imgLight4 from '../../assets/images/emilio-garcia-_bzFLkJyY6o-unsplash.jpg';
 import imgLight5 from '../../assets/images/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg';

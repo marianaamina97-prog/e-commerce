@@ -7,6 +7,7 @@ import Products from './components/sections/Products'
 import About2 from './components/sections/About2'
 import Ligts from './components/sections/Lights'
 import Testimonials from './components/sections/Testimonials'
+import Info from './components/sections/Info'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <About2 />
       <Ligts />
       <Testimonials />
+      <Info />
     </main>
     <Footer />
     </>

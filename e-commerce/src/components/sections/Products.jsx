@@ -40,8 +40,8 @@ function Products({ products = defaultProducts }) {
                 </div>
             </div>
         </section>
+        
     );
 }
 
 export default Products;
-
