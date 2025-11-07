@@ -27,10 +27,7 @@ export default function Info() {
          backgroundPosition: "center bottom 35%",
       }}
     >
-      {/* Left gradient fade for readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
-
-      {/* Text content (no background box now) */}
       <div className="relative z-10 max-w-lg text-right text-white mr-2 sm:mr-8 md:mr-16 lg:mr-24 xl:mr-32">
         <h2 className="text-4xl font-bold mb-6 drop-shadow-lg">
           Experience the Art of Fine Lighting
