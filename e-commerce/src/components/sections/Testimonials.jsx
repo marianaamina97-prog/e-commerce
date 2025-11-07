@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import testimonialImage from "../../assets/images/ussama-azam-zO6T1CHeBHQ-unsplash.jpg"; // ✅ remove trailing slash
+import testimonialImage from "../../assets/images/ussama-azam-zO6T1CHeBHQ-unsplash.jpg"; 
 
 export default function Testimonials() {
   const testimonials = [
@@ -83,7 +83,7 @@ export default function Testimonials() {
         </div>
 
         {/* RIGHT SIDE - Product Image */}
-        <div className="w-full h-[480px] md:h-[520px] rounded-2xl overflow-hidden shadow-lg">
+        <div className="w-full h-[480px] md:w-500px md:h-[520px] rounded-2xl overflow-hidden shadow-lg">
           <img
             src={testimonialImage}
             alt="Luxora Product"
