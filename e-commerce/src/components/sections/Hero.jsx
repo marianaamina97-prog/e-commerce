@@ -9,6 +9,7 @@ function Hero() {
       backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(${bgHero})`
     }}
   >
+    <div className='absolute bottom-0 left-0 w-full h-15 bg-gradient-to-b from-transparent to-white opaciy-100'></div>
     {/* Top bar: Logo on left, nav on right */}
     <div className="absolute top-6 left-0 right-0 px-4">
       <div className="container mx-auto flex items-center justify-between">

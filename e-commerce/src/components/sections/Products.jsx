@@ -7,9 +7,9 @@ import imgTable from '../../assets/images/emilio-garcia-_bzFLkJyY6o-unsplash.jpg
 
 const defaultProducts = [
     { title: "Modern Chandelier", image: imgChandelier },
-    { title: "Elegant Pendant Light", image: imgPendant },
+    { title: "Elegant Pendant ", image: imgPendant },
     { title: "Stylish Floor Lamp", image: imgFloor },
-    { title: "Contemporary Table Lamp", image: imgTable },
+    { title: "Contemporary Table ", image: imgTable },
 ];
 
 function Products({ products = defaultProducts }) {

@@ -27,26 +27,26 @@ export default function Info() {
          backgroundPosition: "center bottom 35%",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
-      <div className="relative z-10 max-w-lg text-right text-white mr-2 sm:mr-8 md:mr-16 lg:mr-24 xl:mr-32">
-        <h2 className="text-4xl font-bold mb-6 drop-shadow-lg">
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent "></div>
+      <div className="relative z-10 max-w-lg text-right text-white sm:mr-8 md:mr-16 lg:mr-24 xl:mr-32 ">
+        <h2 className="text-4xl font-bold mb-6 drop-shadow-lg -mr-35">
           Experience the Art of Fine Lighting
         </h2>
 
-        <p className="text-lg mb-4 drop-shadow-md">
+        <p className="text-lg mb-4 drop-shadow-md -mr-35">
           At Luxora, we believe that lighting is more than just illumination; it’s an expression of style and sophistication.
         </p>
 
-        <p className="text-lg drop-shadow-md">
+        <p className="text-lg drop-shadow-md -mr-35">
           Become a part of our community and transform your living spaces with our exquisite lighting solutions.
         </p>
 
-        <h4 className="mt-8 text-2xl font-semibold drop-shadow-lg">
+        <h4 className="mt-8 text-2xl font-semibold drop-shadow-lg -mr-35">
           Join our mailing list
         </h4>
 
         {!subscribed ? (
-          <div className="mt-4 flex justify-end">
+          <div className="mt-4 flex justify-end -mr-35">
             <input
               type="email"
               placeholder="Enter your email"

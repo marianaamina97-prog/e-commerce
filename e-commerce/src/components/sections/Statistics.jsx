@@ -4,7 +4,7 @@ function Statistics() {
         <div
             className="bg-blue-600 text-white rounded-xl shadow-lg
             grid grid-cols-4 gap-8 justify-items-center items-center mx-auto
-            transition-all duration-300 py-8 px-12"
+            transition-all duration-300 py-8 px-12 -mt-20"
             style={{
                 width: '100%',
                 maxWidth: '1200px',
