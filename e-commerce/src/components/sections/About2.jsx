@@ -24,7 +24,7 @@ function About2() {
                         alt="About Luxora"
                         className="w-full h-[443px] object-cover rounded-lg"
                         width={554}
-                        height={443}
+                        height={400}
                     />
                 </div>
             </div>

@@ -88,6 +88,8 @@ export default function Testimonials() {
             src={testimonialImage}
             alt="Luxora Product"
             className="w-full h-full object-cover"
+            width={554}
+            height={400}
           />
         </div>
       </div>
