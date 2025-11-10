@@ -28,7 +28,7 @@ function Lights() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">All Products</h2>
           <p className="text-gray-600">
-            The products we provide are carefully selected for you — crafted with the finest quality and design.
+            The products we provide are carefully selected for you  crafted with the finest quality and design.
           </p>
         </div>
 
