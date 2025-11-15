@@ -88,10 +88,6 @@ luxora/
 │   ├── assets/                 # Images and icons
 │   ├── components/             # Reusable UI components (Navbar, Footer, etc.)
 │   ├── sections/               # Homepage sections (Hero, Features, Products, Testimonials)
-│   ├── pages/                  # Page-level components (Home, About, Contact)
-│   ├── data/                   # Product and testimonial data files
-│   ├── hooks/                  # Custom React hooks
-│   ├── styles/                 # Global styles and Tailwind configuration
 │   ├── App.jsx                 # Root app component
 │   └── main.jsx                # Entry point file
 ├── tailwind.config.js          # Tailwind configuration
