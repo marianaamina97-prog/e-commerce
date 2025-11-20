@@ -1,9 +1,43 @@
 import bgHero from '../../assets/background_img/wu-yi-4FLTvz6aiNQ-unsplash.jpg';
 import Logo from '../common/Logo';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function Hero() {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef(null);
+  const btnRef = useRef(null);
+  useEffect(() => {
+    function onKeyDown(e) {
+      if (e.key === 'Escape') {
+        setOpen(false);
+        btnRef.current?.focus();
+      }
+
+      if (e.key === 'Tab' && open) {
+        const focusable = menuRef.current?.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+        if (!focusable || focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [open]);
+
+  useEffect(() => {
+    if (open) {
+      const firstLink = menuRef.current?.querySelector('a');
+      firstLink?.focus();
+    }
+  }, [open]);
+
   return (
   <section
     className="relative bg-cover bg-center bg-no-repeat min-h-screen w-full flex flex-col justify-center items-center text-white pb-20"
@@ -26,12 +60,16 @@ function Hero() {
             </ul>
           </nav>
           <button
+            ref={btnRef}
             className="md:hidden ml-4 p-2 rounded text-white focus:outline-none"
-            aria-label="Toggle menu"
+            aria-controls="primary-navigation"
+            aria-haspopup="true"
+            aria-label={open ? 'Close main menu' : 'Open main menu'}
             onClick={() => setOpen(prev => !prev)}
             aria-expanded={open}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
+            <svg aria-hidden="true" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -41,12 +79,12 @@ function Hero() {
     {/* Mobile menu (sandwich) - placed in flow so it pushes content down when open */}
     {open && (
       <div className="md:hidden container mx-auto px-4 mt-2">
-        <div className="bg-white bg-opacity-95 text-black rounded-md p-4">
+        <div id="primary-navigation" ref={menuRef} role="navigation" className="bg-white bg-opacity-95 text-black rounded-md p-4">
           <ul className="flex flex-col space-y-3">
-            <li><a href="/" className="block hover:underline">Home</a></li>
-            <li><a href="/about" className="block hover:underline">About</a></li>
-            <li><a href="/features" className="block hover:underline">Features</a></li>
-            <li><a href="/contact" className="block hover:underline">Contact</a></li>
+            <li><a href="/" className="block hover:underline" tabIndex={0}>Home</a></li>
+            <li><a href="/about" className="block hover:underline" tabIndex={0}>About</a></li>
+            <li><a href="/features" className="block hover:underline" tabIndex={0}>Features</a></li>
+            <li><a href="/contact" className="block hover:underline" tabIndex={0}>Contact</a></li>
           </ul>
         </div>
       </div>
