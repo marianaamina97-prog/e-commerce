@@ -9,6 +9,8 @@ function ProductCard({ name, price, originalPrice, image }) {
                     src={image}
                     alt={name}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                 />
                 <button 
                     className="absolute bottom-4 right-4 p-2 bg-white rounded-full shadow-md 
