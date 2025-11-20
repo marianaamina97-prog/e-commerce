@@ -83,7 +83,7 @@ A simplified overview of the Luxora project organization:
 
 ```
 luxora/
-├── public/                     # Static assets (favicon, manifest, etc.)
+├── public/
 ├── src/
 │   ├── assets/                 # Images and icons
 │   ├── components/             # Reusable UI components (Navbar, Footer, etc.)
